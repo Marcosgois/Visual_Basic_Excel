@@ -1,7 +1,7 @@
 Sub actionMacro()
 Dim x As Integer
-x = 13 'O
-    While x < 400
+x = 13 'L
+    While x < 250
         Columns(x).Select
         Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
         ActiveSheet.Range(Cells(6, x - 1), Cells(6, x)).Select
@@ -12,10 +12,10 @@ x = 13 'O
         ActiveCell.FormulaR1C1 = _
             "=IFERROR(VLOOKUP(VLOOKUP(R6C" + CStr(x - 1) + ",Planilha2!R2C1:R173C2,2,FALSE),Planilha3!R7C3:R51C7,2,FALSE),"""")"
         Selection.AutoFill Destination:=ActiveSheet.Range(Cells(8, x), Cells(20, x)), Type:=xlFillDefault
-        Cells(20, x).Select
+        Cells(21, x).Select
         ActiveCell.FormulaR1C1 = _
             "=IFERROR(VLOOKUP(VLOOKUP(R6C" + CStr(x - 1) + ",Planilha2!R2C1:R173C2,2,FALSE),Planilha3!R7C3:R51C7,3,FALSE),"""")"
-        Selection.AutoFill Destination:=ActiveSheet.Range(Cells(20, x), Cells(23, x)), Type:=xlFillDefault
+        Selection.AutoFill Destination:=ActiveSheet.Range(Cells(21, x), Cells(23, x)), Type:=xlFillDefault
         Cells(24, x).Select
         ActiveCell.FormulaR1C1 = _
             "=IFERROR(VLOOKUP(VLOOKUP(R6C" + CStr(x - 1) + ",Planilha2!R2C1:R173C2,2,FALSE),Planilha3!R7C3:R51C7,4,FALSE),"""")"
