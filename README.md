@@ -12,12 +12,19 @@ Excel installed
 ```
 
 ### Explicação dos documentos
+
+* **Código (1) criado sobre demanda da empresa AFIPEA** - [VBA EXCEL](https://github.com/Marcosgois/Visual_Basic_Excel/blob/master/AFIPEA%20VBA%20CODE(1).bas):
 ```
-Código criado sobre demanda da empresa AFIPEA [VBA Excel]:
 Documento importa, exporta e caso não exista um arquivo o cria.
 A importação é feita de um txt para o excel, a exportação é de um txt para o excel. 
 A criação é no caso de um txt não existir com o nome designado no código.
 ```
+
+* **Código (2) criado sobre demanda da empresa AFIPEA** - [VBA EXCEL](https://github.com/Marcosgois/Visual_Basic_Excel/blob/master/AFIPEA%20VBA%20CODE(2).bas):
+```
+Documento criar várias linhas com diferentes códigos VLOOKUP com diferentes parêmetros.
+```
+
 <!---
 ### Installing
 
